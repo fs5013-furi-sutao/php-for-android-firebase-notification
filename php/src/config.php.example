@@ -1,0 +1,8 @@
+<?php
+ 
+// Firebase API Key
+define('FIREBASE_API_KEY', '＜ここにサーバーキーを記載する＞');
+// サーバーキーは、Firebase - [Settings] - [Cloud Messaging] のプロジェクト認証情報にある
+
+// Topics name
+define('TOPICS_NAME', 'news');
