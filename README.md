@@ -83,7 +83,9 @@ keytool -list -v -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.k
 バージョン: 1
 
 Warning:
-JKSキーストアは独自の形式を使用しています。"keytool -importkeystore -srckeystore C:\Users\＜ユーザ名＞\.android\debug.keystore -destkeystore
+JKSキーストアは独自の形式を使用しています。
+"keytool -importkeystore -srckeystore 
+C:\Users\＜ユーザ名＞\.android\debug.keystore -destkeystore
 ```
 
 このメッセージの中から SHA1　のデータを登録する。
