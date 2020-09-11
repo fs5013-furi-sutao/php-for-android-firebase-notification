@@ -4,7 +4,10 @@
 Android 端末側の実装は、別リポジトリにわけている。
 
 Android 端末側の実装：  
-https://github.com/fs5013-furi-sutao/android.firebase.notification
+https://github.com/fs5013-furi-sutao/android.firebase.notification  
+
+config.php には、サーバ情報を記載する必要があるので、このリポジトリにはコミットしていない。
+config.php.example をコピー・リネームして、Firebase プロジェクトのサーバーキー情報を記載する。
 
 タブ1： 単一端末に送信する
 ![単一端末に送信する](./readme.images/php_for_android_notification.individual.png)
