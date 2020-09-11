@@ -1,6 +1,12 @@
 # Firebase を使った Android アプリのプッシュ通知 + PHPによるプッシュ送信の実装
 
 このリポジトリは、サーバ(PHP + MariaDB）の Docker コンテナを含む、プッシュ通知入力・送信システムのサンプルコードです。
+
+サーバーの起動は以下のコマンド：
+```console
+docker-compose up -d
+```
+
 Android 端末側の実装は、別リポジトリにわけている。
 
 Android 端末側の実装：  
