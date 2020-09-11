@@ -76,7 +76,8 @@ keytool -list -v -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.k
 有効期間の開始日: Thu Jun 25 16:22:03 JST 2020終了日: Sat Jun 18 16:22:03 JST 2050
 証明書のフィンガプリント:
          SHA1: 5A:11:FF:7E:64:61:EB:16:51:06:B3:95:4E:6E:84:15:C5:D1:98:FD
-         SHA256: 7F:1E:C9:46:01:E1:2A:D7:60:3B:CF:1F:C6:00:AC:74:A4:B5:C5:4F:33:C6:0F:02:C9:04:C2:8E:94:4E:F7:05
+         SHA256: 7F:1E:C9:46:01:E1:2A:D7:60:3B:CF:1F:C6:00:AC:74:
+                 A4:B5:C5:4F:33:C6:0F:02:C9:04:C2:8E:94:4E:F7:05
 署名アルゴリズム名: SHA1withRSA
 サブジェクト公開鍵アルゴリズム: 2048ビットRSA鍵
 バージョン: 1
