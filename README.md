@@ -15,6 +15,8 @@ https://github.com/fs5013-furi-sutao/android.firebase.notification
 config.php には、サーバ情報を記載する必要があるので、このリポジトリにはコミットしていない。
 config.php.example をコピー・リネームして、Firebase プロジェクトのサーバーキー情報を記載する。
 
+以下は、Web アプリの画面。1画面のみの作りだが、タブで 3 つの機能を切り替え表示できるようにしている。
+
 タブ1： 単一端末に送信する
 ![単一端末に送信する](./readme.images/php_for_android_notification.individual.png)
 
