@@ -1,9 +1,5 @@
 <?php
  
-/**
- * @author Ravi Tamada
- * @link URL Tutorial link
- */
 class Push {
  
     // push message title

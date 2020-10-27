@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   web:
     image: nginx:latest
@@ -15,18 +15,14 @@ services:
   mysql:
     image: mariadb
     environment:
-      MYSQL_DATABASE: yudb
-      MYSQL_USER: mysqluser
-      MYSQL_PASSWORD: mysqluser00
-      MYSQL_ROOT_PASSWORD: mysqluser000
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASS}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASS}
+      - TZ=${TZ}
     ports:
       - "3306:3306"
     volumes:
-      # /var/lib/mysqlをvolumesで追加する意図として、MySQLのデータベースに加えた変更を永続化するため。
-      # 例えば、「yudb」という名前でデータベースを作成し、mysqluserを作成し、DDLを流してテーブルを作成し、
-      # LOAD DATA LOCAL INFILEによってCSVファイルで初期データをロードした場合、
-      # /var/lib/mysqlをvolumesに指定しないと、MySQLのコンテナを起動するたびに初期化処理が走るようになる。
-      - ./mysql/var_lib_mysql:/var/lib/mysql
       # /docker-entrypoint-initdb.d/配下は、
       # Dockerコンテナが初回起動（初期化）される際に１度だけ実行されるスクリプトなどを配置
       # *.sh / *.sql / *.sql.gzの拡張子のファイルはファイル名の昇順に実行される。

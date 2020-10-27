@@ -7,6 +7,15 @@
 docker-compose up -d
 ```
 
+./php/src 内の config.php.example を config.php Firebase のサーバーキーを記載する。
+
+Web アプリは、以下のアドレス（Docker Toolbox でコンテナを起動した際の例）にアクセスする。
+```
+http://192.168.99.100/
+```
+
+Firebase の設定は、「参考資料」フォルダの firebase.xlsx を参考にする。
+
 Android 端末側の実装は、別リポジトリにわけている。
 
 Android 端末側の実装：  
